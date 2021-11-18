@@ -19,3 +19,13 @@ db.userInfoCollection.find(query , projection)
 -- Projection = ex: name:1 so it only output namve value and if name:0 in that case it will only outpout all fileds wihtout name        
 db.userInfoCollection.find(query , fieldName:0)               -  outshow only projected values
 
+
+
+- Insert
+db.collectionName.insertOne({name:"value"})
+db.collectionName.insertMany([{name:"value", name2:"value2"}])
+
+- Update 
+db.collectionName.updateOne(filter, $set:{updateValue})
+ex: db.collectionName.updateOne({name:"user1"}, $set:{age:30})
+ex: db.collectionName.updateOne({designation:"developer"}, $set:{age:30}) - update many
