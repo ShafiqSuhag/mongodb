@@ -33,3 +33,4 @@ ex: db.collectionName.updateOne({designation:"developer"}, $set:{age:30}) - upda
 - Delete 
 db.collectionName.deleteOne(filter)
 db.collectionName.deleteMany({name:"user1"}) -- Delete records that match 
+db.collectionName.deleteMany({}) -- Delete all records in this collection
