@@ -18,3 +18,4 @@ db.userInfoCollection.find().limit(1).skip(1)                - show specific pos
 db.userInfoCollection.find(query , projection)   
 -- Projection = ex: name:1 so it only output namve value and if name:0 in that case it will only outpout all fileds wihtout name        
 db.userInfoCollection.find(query , fieldName:0)               -  outshow only projected values
+
