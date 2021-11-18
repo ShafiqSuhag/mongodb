@@ -29,3 +29,7 @@ db.collectionName.insertMany([{name:"value", name2:"value2"}])
 db.collectionName.updateOne(filter, $set:{updateValue})
 ex: db.collectionName.updateOne({name:"user1"}, $set:{age:30})
 ex: db.collectionName.updateOne({designation:"developer"}, $set:{age:30}) - update many
+
+- Delete 
+db.collectionName.deleteOne(filter)
+db.collectionName.deleteMany({name:"user1"}) -- Delete records that match 
